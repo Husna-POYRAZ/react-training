@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table } from "reactstrap";
+import { Table, Button } from "reactstrap";
 
 export default class ProductList extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class ProductList extends Component {
         3. Bu method CategoryList.js üzerinde çağırıldı.
         4. Tablo üzerinde her tıklamada currencyCategory değişeceği için currencyCategory tıklamaya göre method ile set edildi
         5. Ana component üzerinden ProcuctList.js componente bu state props ile gönderildi, aşağıda kullanımı görülmekte */}
-          {this.props.info.title} : {this.props.currencyCategory}
+          {this.props.currencyCategory} {this.props.info.title}
         </h3>
         <Table striped>
           <thead>
@@ -22,6 +22,7 @@ export default class ProductList extends Component {
               <th>Quantity Per Unit</th>
               <th>Unit Price</th>
               <th>Units In Stock</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -33,6 +34,17 @@ export default class ProductList extends Component {
                 <td>{product.quantityPerUnit}</td>
                 <td>{product.unitPrice}</td>
                 <td>{product.unitsInStock}</td>
+                <td>
+                  <div>
+                    {/* "Add to Cart" butonuna tıklandığında, ilgili ürün için addToCart methodunu çağırarak ürün adını gösterir*/}
+                    <Button
+                      onClick={() => this.props.addToCart(product)}
+                      color="primary"
+                    >
+                      Add to Cart
+                    </Button>
+                  </div>
+                </td>
               </tr>
             ))}
           </tbody>
