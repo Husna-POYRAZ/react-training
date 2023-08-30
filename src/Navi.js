@@ -23,13 +23,16 @@ function Navi(props) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
                 GitHub
               </NavLink>
             </NavItem>
+          </Nav>
+          <Nav>
+            <NavLink href="/user-form">User</NavLink>
+          </Nav>
+          <Nav>
+            <NavLink href="/user-register">User Info</NavLink>
           </Nav>
           <CartSummary
             cart={props.cart}
