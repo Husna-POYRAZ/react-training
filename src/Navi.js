@@ -21,18 +21,9 @@ function Navi(props) {
         <NavbarBrand href="/">Nortwind App</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-          </Nav>
+          <Nav className="me-auto" navbar></Nav>
           <Nav>
-            <NavLink href="/user-form">User</NavLink>
-          </Nav>
-          <Nav>
-            <NavLink href="/user-register">User Info</NavLink>
+            <NavLink href="/user-register">User Register</NavLink>
           </Nav>
           <CartSummary
             cart={props.cart}

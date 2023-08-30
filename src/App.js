@@ -7,8 +7,6 @@ import CartListDetail from "./CartListDetail";
 import { Container, Row, Col } from "reactstrap";
 import alertify from "alertifyjs";
 import { Switch, Route } from "react-router-dom";
-import UserForm from "./UserForm";
-import User from "./UserRegisterForm";
 import UserRegisterForm from "./UserRegisterForm";
 
 export default class App extends Component {
@@ -104,7 +102,6 @@ export default class App extends Component {
                     />
                   )}
                 />
-                <Route path="/user-form" component={UserForm} />
                 <Route path="/user-register" component={UserRegisterForm} />
                 <Route component={NotFoundPage}></Route>
               </Switch>
