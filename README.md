@@ -12,6 +12,11 @@ Projeyi çalıştırmak için aşağıdaki yazılımların makinenizde yüklü o
 
 - [Node.js](https://nodejs.org/) (npm paket yöneticisi ile birlikte gelir)
 
+#### Home Page
+
+<img width="1220" alt="Screenshot 2023-08-30 at 16 53 56" src="https://github.com/Husna-POYRAZ/react-training/assets/75911392/60fea1e6-0d65-43c9-8bac-c3bf29db4d5d">
+
+
 ## Kurulum
 
 1. Projeyi bilgisayarınıza klonlayın:
@@ -59,8 +64,8 @@ Proje, ürünleri kategorilere göre listeleme, ürünleri sepete ekleme/çıkar
 
 ## Kullanılan Teknolojiler ve Yapılar
 
-React: Kullanıcı arayüzü oluşturmak için kullanılmıştır.
-React Router: Sayfa yönlendirmelerini yönetmek için kullanılmıştır.
-Bootstrap: Görsel tasarım ve düzenleme için kullanılmıştır.
-alertifyjs: Bildirimler ve uyarılar için kullanılmıştır.
-Reactstrap: Bootstrap bileşenlerini React uygulamasında kullanmak için kullanılmıştır.
+* React: Kullanıcı arayüzü oluşturmak için kullanılmıştır.
+* React Router: Sayfa yönlendirmelerini yönetmek için kullanılmıştır.
+* Bootstrap: Görsel tasarım ve düzenleme için kullanılmıştır.
+* alertifyjs: Bildirimler ve uyarılar için kullanılmıştır.
+* Reactstrap: Bootstrap bileşenlerini React uygulamasında kullanmak için kullanılmıştır.
